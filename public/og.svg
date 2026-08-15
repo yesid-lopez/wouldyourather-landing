@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-labelledby="title desc">
+  <title id="title">Would You Rather — the iOS party game of impossible choices</title>
+  <desc id="desc">Open Graph image for the Would You Rather iOS app by Lulo.</desc>
+  <rect width="1200" height="630" fill="#253A82"/>
+  <rect width="16" height="630" fill="#88A2FF"/>
+  <rect x="72" y="64" width="64" height="64" rx="16" fill="#FFB2F7"/>
+  <text x="104" y="106" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="800" fill="#253A82" text-anchor="middle">VS</text>
+  <text x="154" y="106" font-family="system-ui, -apple-system, sans-serif" font-size="26" font-weight="700" fill="#E3FC87">Would You Rather</text>
+  <text x="72" y="320" font-family="system-ui, -apple-system, sans-serif" font-size="54" font-weight="800" fill="#C0E0FF">The iOS party game of</text>
+  <text x="72" y="388" font-family="system-ui, -apple-system, sans-serif" font-size="54" font-weight="800" fill="#C0E0FF">impossible choices</text>
+  <text x="72" y="450" font-family="system-ui, -apple-system, sans-serif" font-size="24" fill="#C0E0FF">1,500+ questions · 11 categories · Free · No account</text>
+  <text x="72" y="560" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="700" fill="#AB9DFF">By Lulo</text>
+  <rect x="980" y="528" width="148" height="44" rx="22" fill="#E3FC87"/>
+  <text x="1054" y="557" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="800" fill="#253A82" text-anchor="middle">Play on iOS</text>
+</svg>

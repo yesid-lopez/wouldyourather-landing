@@ -1,0 +1,177 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-outfit);
+
+  /* Primary fills — saturated periwinkle */
+  --color-peri: #88a2ff;
+  --color-peri-50: #eef2ff;
+  --color-peri-100: #dce6ff;
+  --color-peri-200: #c4d4ff;
+  --color-peri-300: #a8beff;
+  --color-peri-400: #96b0ff;
+  --color-peri-500: #88a2ff;
+  --color-peri-600: #6d88e8;
+  --color-peri-700: #546bc4;
+  --color-peri-800: #3e5099;
+  --color-peri-900: #2a386e;
+
+  /* Second option / rather side — bright pink */
+  --color-pink: #ffb2f7;
+  --color-pink-50: #fff0fd;
+  --color-pink-100: #ffe0fb;
+  --color-pink-200: #ffc8f9;
+  --color-pink-300: #ffbef8;
+  --color-pink-400: #ffb8f7;
+  --color-pink-500: #ffb2f7;
+  --color-pink-600: #e890de;
+  --color-pink-700: #c46bb8;
+  --color-pink-800: #964a8c;
+  --color-pink-900: #6a3264;
+
+  /* Accents, CTA pops, "or" energy — neon lime */
+  --color-lime: #e3fc87;
+  --color-lime-50: #f7ffe8;
+  --color-lime-100: #f0fed4;
+  --color-lime-200: #e9fdb8;
+  --color-lime-300: #e6fc9e;
+  --color-lime-400: #e4fc90;
+  --color-lime-500: #e3fc87;
+  --color-lime-600: #c5de5c;
+  --color-lime-700: #9ab33c;
+  --color-lime-800: #6d8228;
+  --color-lime-900: #455418;
+
+  /* Brand, links, icons — saturated lavender */
+  --color-lav: #ab9dff;
+  --color-lilac: #ab9dff;
+  --color-lav-50: #f4f1ff;
+  --color-lav-100: #e8e3ff;
+  --color-lav-200: #d2caff;
+  --color-lav-300: #c0b5ff;
+  --color-lav-400: #b5a8ff;
+  --color-lav-500: #ab9dff;
+  --color-lav-600: #8f80e6;
+  --color-lav-700: #7166c2;
+  --color-lav-800: #544b96;
+  --color-lav-900: #3a346c;
+
+  /* Page background / soft cards — light sky blue */
+  --color-sky: #c0e0ff;
+  --color-sky-50: #eef6ff;
+  --color-sky-100: #dceeff;
+  --color-sky-200: #c0e0ff;
+  --color-sky-300: #a6d2ff;
+
+  /* Text + dark surfaces — deep navy */
+  --color-navy: #253a82;
+  --color-navy-50: #eef2fb;
+  --color-navy-100: #dce4f4;
+  --color-navy-200: #b8c6e4;
+  --color-navy-300: #8fa0cc;
+  --color-navy-400: #6b7fb5;
+  --color-navy-500: #4e66a0;
+  --color-navy-600: #3c538c;
+  --color-navy-700: #2f4478;
+  --color-navy-800: #1e2f6b;
+  --color-navy-900: #253a82;
+
+  /* shadcn required tokens */
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+}
+
+:root {
+  --radius: 1.25rem;
+  --background: #fafbff;
+  --foreground: #111111;
+  --card: #ffffff;
+  --card-foreground: #111111;
+  --popover: #ffffff;
+  --popover-foreground: #111111;
+  --primary: #111111;
+  --primary-foreground: #e3fc87;
+  --secondary: #eef2ff;
+  --secondary-foreground: #111111;
+  --muted: #f4f4f5;
+  --muted-foreground: #525252;
+  --accent: #e8e3ff;
+  --accent-foreground: #253a82;
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: #b8c6e4;
+  --input: #b8c6e4;
+  --ring: #ab9dff;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+  animation: float 6s ease-in-out 2s infinite;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-float,
+  .animate-float-delayed {
+    animation: none;
+  }
+}

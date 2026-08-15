@@ -1,0 +1,25 @@
+# Would You Rather
+
+> Would You Rather is a free iOS party game of impossible choices — 1,500+ questions in 11 categories, with shuffle, custom My Cards, and offline play. No account required. Made by Lulo.
+
+Would You Rather is for friends, families, roommates, and anyone who needs a fast party game: road trips, dinners, icebreakers, and late-night “this or that” arguments. It is an iOS app. It is not a website game and it does not require sign-up.
+
+## Pages
+
+- [Home](https://wouldyourather.app/): Product landing page for the Would You Rather iOS app
+- [Privacy Policy](https://wouldyourather.app/privacy): How the app handles data (no account required)
+- [Full product brief](https://wouldyourather.app/llms-full.txt): Longer factual summary for AI agents
+
+## Get the app
+
+- Platform: iOS
+- Price: Free
+- Account: Not required
+- Offline: Yes
+- App Store: listing URL is a placeholder until publish (see the homepage)
+- Support: saradrada@luloai.com
+
+## Optional
+
+- Publisher: Lulo
+- Canonical site URL (placeholder until production domain is set): https://wouldyourather.app
