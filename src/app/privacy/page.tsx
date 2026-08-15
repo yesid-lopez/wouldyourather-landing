@@ -35,8 +35,8 @@ export default function PrivacyPolicy() {
         <h1 className="mb-3 font-display text-3xl font-extrabold tracking-tight text-black sm:text-4xl">
           Privacy Policy for {site.name}
         </h1>
-        <p className="mb-12 text-sm text-neutral-500">
-          This is a placeholder policy and needs a legal review before launch.
+        <p className="mb-10 text-sm text-neutral-500">
+          Last updated: August 15, 2026
         </p>
 
         <p className="mb-10 leading-relaxed text-neutral-800">
