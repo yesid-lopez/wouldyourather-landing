@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Outfit } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 import { JsonLd } from "@/components/json-ld";
@@ -30,6 +31,11 @@ export default function RootLayout({
       >
         <JsonLd data={getSiteJsonLd()} />
         {children}
+        <Script
+          src="https://umami.yesidlopez.de/script.js"
+          data-website-id="25315e26-8c50-4882-92c3-7898b712a52c"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
